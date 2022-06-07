@@ -16,4 +16,19 @@ class EnvironmentAndSupply {
     }
 }
 
+class DispenseLogs {
+    public $time;
+    public $temperature;
+    public $humidity;
+    public $serving;
+    public $mode;
+
+    public function __construct($time, $temperature, $humidity, $serving, $mode){
+        $this->time = $time;
+        $this->temperature = $temperature;
+        $this->humidity = $humidity;
+        $this->serving = $serving;
+        $this->mode = $mode;
+    }
+}
 ?>
