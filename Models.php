@@ -1,5 +1,15 @@
 <?php
 
+class Account {
+    public $username;
+    public $name;
+
+    public function __construct($username, $name){
+        $this->username = $username;
+        $this->name = $name;
+    }
+}
+
 class EnvironmentAndSupply {
     public $temperature;
     public $humidity;
@@ -31,4 +41,5 @@ class DispenseLogs {
         $this->mode = $mode;
     }
 }
+
 ?>
