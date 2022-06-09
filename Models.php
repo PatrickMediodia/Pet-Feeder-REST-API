@@ -42,4 +42,13 @@ class DispenseLogs {
     }
 }
 
+class DispenseSlots {
+    public $time;
+    public $serving;
+    
+    public function __construct($time, $serving){
+        $this->time = $time;
+        $this->serving = $serving;
+    }
+}
 ?>
