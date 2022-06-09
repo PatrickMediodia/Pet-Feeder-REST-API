@@ -3,7 +3,7 @@
 include_once('connects.php');
 include_once('Models.php');
 
-$query_string = "SELECT * FROM dispenselogs";
+$query_string = "SELECT * FROM dispenselogs ORDER BY `time` DESC";
 $result = mysqli_query($con, $query_string);
 
 if (mysqli_num_rows($result) == 0) {
