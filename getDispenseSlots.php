@@ -12,7 +12,7 @@ if (mysqli_num_rows($result) == 0) {
     $dispenseSlots = [];
     while($row = mysqli_fetch_array($result)) {
         $dispenseSlot = new DispenseSlots(
-            $row['time'],
+            $row['dispenseTime'],
             $row['serving'],
         );
         array_push($dispenseSlots, $dispenseSlot);

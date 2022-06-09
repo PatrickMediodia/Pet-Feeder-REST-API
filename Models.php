@@ -43,11 +43,11 @@ class DispenseLogs {
 }
 
 class DispenseSlots {
-    public $time;
+    public $dispenseTime;
     public $serving;
     
-    public function __construct($time, $serving){
-        $this->time = $time;
+    public function __construct($dispenseTime, $serving){
+        $this->dispenseTime = $dispenseTime;
         $this->serving = $serving;
     }
 }
